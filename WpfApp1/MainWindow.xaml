@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="huak" Height="450" Width="800">
+    <Grid x:Name="big" Background="#FF7E2222">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="149*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listBox" Margin="513,53,76,268" RenderTransformOrigin="0.512,0.463" Grid.RowSpan="2">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveCaptionColorKey}}" Offset="0.198"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+            <Button x:Name="gh6" Click="Button_Click_1" Content="АТНГ" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="361.593"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button x:Name="gh" Content="Опммлг" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="40.867"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="8.635"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </ListBox>
+        <Button x:Name="button" Content="красный" HorizontalAlignment="Left" Margin="54,100,0,0" VerticalAlignment="Top" Height="19" Width="67" Background="#FFC5B7E0" Click="button_Click" Grid.RowSpan="2"/>
+        <Button x:Name="button1" Content="жёлтый" HorizontalAlignment="Left" Margin="54,148,0,0" VerticalAlignment="Top" Height="19" Width="67" Background="#FFC5B7E0" Click="button1_Click" Grid.RowSpan="2"/>
+        <Button x:Name="button2" Content="синий" HorizontalAlignment="Left" Margin="129,124,0,0" VerticalAlignment="Top" Height="18" Width="67" Background="#FFC5B7E0" Click="button2_Click" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="10.396"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="262,201,0,0" Grid.RowSpan="2" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button3" Content="Сюда" HorizontalAlignment="Left" Margin="208,261,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="53" Width="260" Click="button3_Click"/>
+
+    </Grid>
+</Window>
